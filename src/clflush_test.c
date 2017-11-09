@@ -62,7 +62,7 @@ void test_line_flush(char* path) {
       memcpy(uptr, CONTENT, CONTENTLEN);
       CL_FLUSH(uptr);
 #ifdef DOUBLEFLUSH
-	    CL_FLUSH(uptr);
+      CL_FLUSH(uptr);
 #endif
     }
   }
