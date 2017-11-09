@@ -9,6 +9,6 @@ git clone https://github.com/TianyouLi/nvml.git
 
 # create build dir
 cd ${BLD_DIR}/nvml
-make && make install prefix=${CUR_DIR}/../../lib
+make && make install prefix=${BLD_DIR}/../../lib
 
 cd ${CUR_DIR}

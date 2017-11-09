@@ -15,7 +15,7 @@ for sub in */; do
     echo "*********** building...${sub} **************"
     if [ -e ${sub}/build.sh ]
     then
-	bash ${sub}/build.sh
+				bash ${sub}/build.sh
     fi
 done
 
