@@ -24,7 +24,7 @@ TARGET_LINK_LIBRARIES ( clflush_test
     ${pmplayground_SOURCE_DIR}/../lib/lib/libpmem.a
 )
 
-SET ( GCC_COMPILE_FLAGS "-Wall -std=gnu99 -O2 -DFLUSHOPT")
+SET ( GCC_COMPILE_FLAGS "-Wall -std=gnu99 -O2 -DFLUSHOPT -DDOUBLEFLUSH")
 SET ( GCC_LINK_FLAGS    "-static-libgcc -Wall -O2")
 
 SET( CMAKE_C_FLAGS  "${CMAKE_CXX_FLAGS} ${GCC_COMPILE_FLAGS}" )

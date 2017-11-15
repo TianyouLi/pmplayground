@@ -99,7 +99,7 @@ int
 main(int argc, char *argv[])
 {
 	struct timeval start, end;
-	char* pmem = "/mnt/mem/pmem/myfile";
+	char* pmem = "/mnt/pmem/myfile";
   
   // start benchmarking
 	gettimeofday(&start, NULL);
