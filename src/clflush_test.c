@@ -91,6 +91,10 @@ void test_batch_flush(char* path) {
     for (uintptr_t uptr = (uintptr_t)pmemaddr; uptr < (uintptr_t)pmemaddr + TOTALWRITE;
          uptr += FLUSH_ALIGN) {
       CL_FLUSH((char *)uptr);
+#ifdef DOUBLEFLUSH
+      CL_FLUSH((char *)uptr);
+#endif
+
     }
   }
 }
